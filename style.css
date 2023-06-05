@@ -1,0 +1,52 @@
+:root {
+  --black: #000;
+  --gray: #282a2d;
+  --light-gray: #e3e7e9;
+  --green: #22ee11;
+}
+
+body {
+  margin: 2rem;
+  background: var(--black);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: 800px;
+  min-height: 90svh;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#calculadora,
+#resultado {
+  border: none;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  margin: 0px;
+  background: var(--gray);
+  color: var(--light-gray);
+  font-size: 1.25rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+#calculadora {
+  resize: none;
+}
+
+#calculadora:focus {
+  outline: none;
+}
+
+#resultado {
+  color: var(--green);
+  display: grid;
+  text-align: right;
+}
+
+#total {
+  align-self: end;
+  margin-top: 1.2rem;
+}
